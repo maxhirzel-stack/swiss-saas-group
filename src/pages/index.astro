@@ -1,11 +1,808 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="/">
+        <img src="/logo.png" alt="Swiss SaaS Group" />
+      </a>
+
+      <nav>
+        <a href="#companies">Companies</a>
+        <a href="#about">About</a>
+        <a href="#acquisitions">Acquisitions</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">B2B SOFTWARE · ZURICH, SWITZERLAND</p>
+
+        <h1>
+          Building software businesses
+          <span>for the long term.</span>
+        </h1>
+
+        <p class="intro">
+          Swiss SaaS Group acquires, operates and grows practical B2B
+          software companies with a focus on automation, productivity
+          and sustainable long-term value.
+        </p>
+
+        <div class="actions">
+          <a class="button primary" href="#companies">
+            Our Companies
+          </a>
+
+          <a class="button secondary" href="#acquisitions">
+            Sell Your SaaS
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPANIES -->
+    <section class="companies" id="companies">
+      <div class="container">
+        <p class="eyebrow">OUR COMPANIES</p>
+
+        <h2>Focused B2B software.</h2>
+
+        <div class="company-grid">
+          <article class="company-card">
+            <span>WORKFLOW AUTOMATION</span>
+
+            <h3>Logic Sheet</h3>
+
+            <p>
+              Workflow automation and AI for Google Sheets.
+            </p>
+
+            <a
+              href="https://logicsheet.co"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit Logic Sheet →
+            </a>
+          </article>
+
+          <article class="company-card">
+            <span>TIME TRACKING</span>
+
+            <h3>TimeSheet</h3>
+
+            <p>
+              Simple time tracking for field teams and growing businesses.
+            </p>
+
+            <a
+              href="https://timesheet.global"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit TimeSheet →
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-heading">
+          <p class="eyebrow">ABOUT US</p>
+
+          <h2>
+            Built to own.<br />
+            Built to last.
+          </h2>
+        </div>
+
+        <div class="about-copy">
+          <p class="about-lead">
+            Swiss SaaS Group is a Switzerland-based software group focused
+            on acquiring, operating and developing established B2B SaaS businesses.
+          </p>
+
+          <p>
+            We combine decades of technology and business experience with a
+            long-term ownership approach. Our focus is on practical software
+            products with established customers, recurring revenue and clear
+            opportunities for sustainable growth.
+          </p>
+
+          <div class="founder">
+            <strong>Max Hirzel</strong>
+            <span>Founder · Swiss SaaS Group</span>
+            <span>Zurich, Switzerland</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACQUISITIONS -->
+    <section class="acquisitions" id="acquisitions">
+      <div class="container acquisitions-grid">
+        <div>
+          <p class="eyebrow">ACQUISITIONS</p>
+
+          <h2>
+            Looking to sell<br />
+            your SaaS business?
+          </h2>
+        </div>
+
+        <div class="acquisition-copy">
+          <p class="acquisition-lead">
+            We acquire established B2B SaaS businesses and develop them
+            with a long-term owner-operator mindset.
+          </p>
+
+          <p>
+            We are particularly interested in bootstrapped software companies
+            with recurring revenue, loyal customers, a clear B2B use case and
+            a product that solves a real operational problem.
+          </p>
+
+          <p>
+            Our approach is pragmatic and founder-friendly. We aim to preserve
+            what already works, ensure a smooth transition and continue
+            developing the business for the long term.
+          </p>
+
+          <div class="acquisition-points">
+            <div>
+              <strong>Acquire</strong>
+              <span>Established B2B SaaS businesses with real customers.</span>
+            </div>
+
+            <div>
+              <strong>Operate</strong>
+              <span>Hands-on ownership with a practical software mindset.</span>
+            </div>
+
+            <div>
+              <strong>Grow</strong>
+              <span>Sustainable product, customer and revenue development.</span>
+            </div>
+          </div>
+
+          <a class="button primary" href="mailto:info@swisssaasgroup.com">
+            Discuss an Acquisition
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">CONTACT</p>
+
+          <h2>
+            Let's talk.
+          </h2>
+
+          <p class="contact-intro">
+            Acquisitions, partnerships or general enquiries.
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-person">
+            <strong>Max Hirzel</strong>
+            <span>Founder · Swiss SaaS Group</span>
+          </div>
+
+          <div class="contact-details">
+            <div>
+              <span>Address</span>
+
+              <p>
+                Tränkebachstrasse 20<br />
+                8712 Stäfa<br />
+                Switzerland
+              </p>
+            </div>
+
+            <div>
+              <span>Phone</span>
+
+              <a href="tel:+41794205182">
+                +41 79 420 51 82
+              </a>
+            </div>
+
+            <div>
+              <span>Email</span>
+
+              <a href="mailto:info@swisssaasgroup.com">
+                info@swisssaasgroup.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <img src="/logo.png" alt="Swiss SaaS Group" />
+
+        <p>
+          Building, operating and growing B2B software businesses
+          from Switzerland.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <span>Portfolio</span>
+
+          <a
+            href="https://logicsheet.co"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Logic Sheet
+          </a>
+
+          <a
+            href="https://timesheet.global"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            TimeSheet
+          </a>
+        </div>
+
+        <div>
+          <span>Company</span>
+
+          <a href="#about">About</a>
+          <a href="#acquisitions">Acquisitions</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div>
+          <span>Legal</span>
+
+          <a href="#">Imprint</a>
+          <a href="#">Privacy</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© {new Date().getFullYear()} Swiss SaaS Group</span>
+      <span>Stäfa · Zurich · Switzerland</span>
+    </div>
+  </footer>
 </Layout>
+
+<style>
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+
+  :global(body) {
+    margin: 0;
+    background: #0c0d0e;
+    color: #f5f3ed;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  :global(*) {
+    box-sizing: border-box;
+  }
+
+  .container {
+    width: min(1180px, calc(100% - 48px));
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    color: #d8bd78;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+  }
+
+  h2 {
+    margin: 10px 0 45px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 1.05;
+  }
+
+  /* HEADER */
+
+  .header {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .brand img {
+    display: block;
+    width: 280px;
+    max-width: 42vw;
+    height: auto;
+  }
+
+  nav {
+    display: flex;
+    gap: 30px;
+  }
+
+  nav a {
+    color: #d0d0d0;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  nav a:hover {
+    color: #d8bd78;
+  }
+
+  /* HERO */
+
+  .hero {
+    min-height: 760px;
+    display: flex;
+    align-items: center;
+    background:
+      radial-gradient(
+        circle at 78% 35%,
+        rgba(216, 189, 120, 0.10),
+        transparent 28%
+      ),
+      linear-gradient(135deg, #090a0b, #191a1b);
+  }
+
+  .hero-content {
+    padding-top: 80px;
+  }
+
+  h1 {
+    max-width: 1000px;
+    margin: 20px 0 28px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(52px, 7vw, 90px);
+    font-weight: 400;
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+  }
+
+  h1 span {
+    display: block;
+    color: #d8bd78;
+  }
+
+  .intro {
+    max-width: 720px;
+    color: #b8b8b8;
+    font-size: 20px;
+    line-height: 1.65;
+  }
+
+  .actions {
+    display: flex;
+    gap: 14px;
+    margin-top: 38px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 15px 23px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .primary {
+    background: #d8bd78;
+    color: #111;
+  }
+
+  .secondary {
+    border: 1px solid #444;
+    color: white;
+  }
+
+  /* COMPANIES */
+
+  .companies {
+    padding: 110px 0;
+    background: #f5f3ed;
+    color: #171717;
+  }
+
+  .company-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .company-card {
+    padding: 42px;
+    border: 1px solid #d9d6cf;
+    background: white;
+  }
+
+  .company-card span {
+    color: #9b7c32;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+  }
+
+  .company-card h3 {
+    margin: 18px 0 12px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 36px;
+    font-weight: 400;
+  }
+
+  .company-card p {
+    color: #666;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .company-card a {
+    display: inline-block;
+    margin-top: 25px;
+    color: #8b6d27;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  /* ABOUT */
+
+  .about {
+    padding: 120px 0;
+    background: #171819;
+    color: #f5f3ed;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 100px;
+  }
+
+  .about h2 {
+    color: #f5f3ed;
+  }
+
+  .about-copy {
+    max-width: 620px;
+    padding-top: 32px;
+  }
+
+  .about-copy p {
+    color: #aaa;
+    font-size: 18px;
+    line-height: 1.75;
+  }
+
+  .about-copy .about-lead {
+    margin-top: 0;
+    color: #f1eee6;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    line-height: 1.5;
+  }
+
+  .founder {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid #343536;
+  }
+
+  .founder strong {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    font-weight: 400;
+  }
+
+  .founder span {
+    color: #888;
+    font-size: 14px;
+  }
+
+  /* ACQUISITIONS */
+
+  .acquisitions {
+    padding: 120px 0;
+    background: #f5f3ed;
+    color: #171717;
+  }
+
+  .acquisitions-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 100px;
+  }
+
+  .acquisition-copy {
+    max-width: 640px;
+    padding-top: 32px;
+  }
+
+  .acquisition-copy p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.75;
+  }
+
+  .acquisition-copy .acquisition-lead {
+    margin-top: 0;
+    color: #171717;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    line-height: 1.5;
+  }
+
+  .acquisition-points {
+    margin: 40px 0;
+    border-top: 1px solid #d8d4ca;
+  }
+
+  .acquisition-points div {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #d8d4ca;
+  }
+
+  .acquisition-points strong {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .acquisition-points span {
+    color: #777;
+    line-height: 1.5;
+  }
+
+  /* CONTACT */
+
+  .contact {
+    padding: 120px 0;
+    background:
+      radial-gradient(
+        circle at 80% 50%,
+        rgba(216, 189, 120, 0.08),
+        transparent 30%
+      ),
+      #0d0e0f;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 100px;
+  }
+
+  .contact-intro {
+    max-width: 440px;
+    color: #999;
+    font-size: 19px;
+    line-height: 1.6;
+  }
+
+  .contact-card {
+    padding: 42px;
+    border: 1px solid #303132;
+    background: #151617;
+  }
+
+  .contact-person {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #303132;
+  }
+
+  .contact-person strong {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+    font-weight: 400;
+  }
+
+  .contact-person span {
+    color: #888;
+  }
+
+  .contact-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 50px;
+    padding-top: 30px;
+  }
+
+  .contact-details div:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .contact-details span {
+    display: block;
+    margin-bottom: 8px;
+    color: #d8bd78;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .contact-details p {
+    margin: 0;
+    color: #d0d0d0;
+    line-height: 1.7;
+  }
+
+  .contact-details a {
+    color: #f5f3ed;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    padding: 70px 0 25px;
+    border-top: 1px solid #292a2b;
+    background: #090a0b;
+  }
+
+  .footer-main {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 80px;
+    padding-bottom: 50px;
+  }
+
+  .footer-brand img {
+    width: 250px;
+    max-width: 100%;
+  }
+
+  .footer-brand p {
+    max-width: 400px;
+    margin-top: 20px;
+    color: #777;
+    line-height: 1.6;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .footer-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-links span {
+    margin-bottom: 6px;
+    color: #d8bd78;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .footer-links a:hover {
+    color: #f5f3ed;
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 24px;
+    border-top: 1px solid #202122;
+    color: #666;
+    font-size: 12px;
+  }
+
+  /* MOBILE */
+
+  @media (max-width: 700px) {
+    nav {
+      display: none;
+    }
+
+    .brand img {
+      width: 230px;
+      max-width: 70vw;
+    }
+
+    .hero {
+      min-height: 700px;
+    }
+
+    .actions {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .company-grid,
+    .about-grid,
+    .acquisitions-grid,
+    .contact-grid,
+    .footer-main {
+      grid-template-columns: 1fr;
+    }
+
+    .about-grid,
+    .acquisitions-grid,
+    .contact-grid {
+      gap: 20px;
+    }
+
+    .about-copy,
+    .acquisition-copy {
+      padding-top: 0;
+    }
+
+    .contact-details {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-details div:first-child {
+      grid-column: auto;
+    }
+
+    .footer-links {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+    }
+  }
+</style>
