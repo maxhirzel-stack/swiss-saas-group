@@ -279,7 +279,7 @@ import Layout from '../layouts/Layout.astro';
         <div>
           <span>Legal</span>
 
-          <a href="#">Imprint</a>
+          <a href="#imprint">Imprint</a>
           <a href="#">Privacy</a>
         </div>
       </div>
@@ -290,6 +290,40 @@ import Layout from '../layouts/Layout.astro';
       <span>Stäfa · Zurich · Switzerland</span>
     </div>
   </footer>
+
+  <section class="imprint" id="imprint">
+    <div class="container imprint-inner">
+      <div class="imprint-block">
+        <h3>Swiss SaaS Group</h3>
+        <p>
+          operated by Hirzel SwissMedicare<br />
+          Tränkebachstrasse 20<br />
+          8712 Stäfa<br />
+          Switzerland
+        </p>
+
+        <p>UID: CHE-200.046.380</p>
+      </div>
+
+      <div class="imprint-block">
+        <h3>Contact</h3>
+        <p>
+          Email: <a href="mailto:info@swisssaasgroup.com">info@swisssaasgroup.com</a><br />
+          Phone: +41 79 420 51 92
+        </p>
+      </div>
+
+      <div class="imprint-block">
+        <h3>Responsible for content</h3>
+        <p>
+          Max Hirzel<br />
+          Tränkebachstrasse 20<br />
+          8712 Stäfa<br />
+          Switzerland
+        </p>
+      </div>
+    </div>
+  </section>
 </Layout>
 
 <style>
@@ -749,6 +783,40 @@ import Layout from '../layouts/Layout.astro';
     font-size: 12px;
   }
 
+  .imprint {
+    padding: 0 0 70px;
+    background: #090a0b;
+    border-top: 1px solid #202122;
+  }
+
+  .imprint-inner {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+    padding-top: 26px;
+  }
+
+  .imprint-block h3 {
+    margin: 0 0 12px;
+    color: #d8bd78;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .imprint-block p {
+    margin: 0;
+    color: #aaa;
+    line-height: 1.7;
+    font-size: 14px;
+  }
+
+  .imprint-block a {
+    color: #f5f3ed;
+    text-decoration: none;
+  }
+
   /* MOBILE */
 
   @media (max-width: 700px) {
@@ -803,6 +871,10 @@ import Layout from '../layouts/Layout.astro';
 
     .footer-bottom {
       flex-direction: column;
+    }
+
+    .imprint-inner {
+      grid-template-columns: 1fr;
     }
   }
 </style>
