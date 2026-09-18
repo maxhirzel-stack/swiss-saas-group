@@ -158,29 +158,33 @@ import Layout from '../layouts/Layout.astro';
 
     <!-- ACQUISITIONS -->
     <section class="acquisitions" id="acquisitions">
-      <div class="container acquisitions-grid">
-        <div>
-          <p class="eyebrow">ACQUISITIONS</p>
+      <div class="container">
+        <div class="acquisitions-intro">
+          <div>
+            <p class="eyebrow">ACQUISITIONS</p>
 
-          <h2>
-            Looking to sell<br />
-            your SaaS business?
-          </h2>
+            <h2>
+              Looking to sell<br />
+              your SaaS business?
+            </h2>
+          </div>
+
+          <div class="acquisition-copy">
+            <p class="acquisition-lead">
+              We acquire established B2B SaaS businesses and develop them
+              with a long-term owner-operator mindset.
+            </p>
+
+            <p>
+              We are not looking to acquire businesses for a quick resale. Our
+              objective is to operate and develop them for the long term. We value
+              straightforward transactions, realistic valuations and a smooth
+              handover for founders, customers and employees.
+            </p>
+          </div>
         </div>
 
-        <div class="acquisition-copy">
-          <p class="acquisition-lead">
-            We acquire established B2B SaaS businesses and develop them
-            with a long-term owner-operator mindset.
-          </p>
-
-          <p>
-            We are not looking to acquire businesses for a quick resale. Our
-            objective is to operate and develop them for the long term. We value
-            straightforward transactions, realistic valuations and a smooth
-            handover for founders, customers and employees.
-          </p>
-
+        <div class="acquisition-details">
           <div class="acquisition-criteria">
             <h3>What we look for</h3>
             <ul>
@@ -191,27 +195,32 @@ import Layout from '../layouts/Layout.astro';
             </ul>
           </div>
 
-          <div class="acquisition-points">
-            <div>
-              <strong>Initial conversation</strong>
-              <span>Tell us about your product, customers and reasons for considering a sale.</span>
-            </div>
+          <div class="acquisition-process">
+            <h3>How it works</h3>
+            <div class="acquisition-points">
+              <div>
+                <strong>Initial conversation</strong>
+                <span>Tell us about your product, customers and reasons for considering a sale.</span>
+              </div>
 
-            <div>
-              <strong>Review and offer</strong>
-              <span>We review the key business figures and discuss an offer if there is a mutual fit.</span>
-            </div>
+              <div>
+                <strong>Review and offer</strong>
+                <span>We review the key business figures and discuss an offer if there is a mutual fit.</span>
+              </div>
 
-            <div>
-              <strong>Handover</strong>
-              <span>We agree on a practical transition plan for the product, customers and team.</span>
+              <div>
+                <strong>Handover</strong>
+                <span>We agree on a practical transition plan for the product, customers and team.</span>
+              </div>
             </div>
           </div>
+        </div>
 
+        <div class="acquisition-cta">
+          <p>A short introduction and a few key figures are enough to start a confidential conversation.</p>
           <a class="button primary" href="mailto:info@swisssaasgroup.com?subject=SaaS%20acquisition%20enquiry">
             Email Max confidentially
           </a>
-          <p class="cta-note">A short introduction and a few key figures are enough to start a confidential conversation.</p>
         </div>
       </div>
     </section>
@@ -595,15 +604,20 @@ import Layout from '../layouts/Layout.astro';
     color: #171717;
   }
 
-  .acquisitions-grid {
+  .acquisitions-intro,
+  .acquisition-details {
     display: grid;
     grid-template-columns: 0.9fr 1.1fr;
     gap: 100px;
   }
 
+  .acquisition-details {
+    margin-top: 48px;
+  }
+
   .acquisition-copy {
     max-width: 640px;
-    padding-top: 32px;
+    padding-top: 20px;
   }
 
   .acquisition-copy p {
@@ -621,14 +635,21 @@ import Layout from '../layouts/Layout.astro';
   }
 
   .acquisition-criteria {
-    margin-top: 32px;
+    border-top: 1px solid #d8d4ca;
+    padding-top: 28px;
   }
 
-  .acquisition-criteria h3 {
+  .acquisition-criteria h3,
+  .acquisition-process h3 {
     margin: 0 0 16px;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 26px;
     font-weight: 400;
+  }
+
+  .acquisition-process {
+    border-top: 1px solid #d8d4ca;
+    padding-top: 28px;
   }
 
   .acquisition-criteria ul {
@@ -640,8 +661,7 @@ import Layout from '../layouts/Layout.astro';
   }
 
   .acquisition-points {
-    margin: 40px 0;
-    border-top: 1px solid #d8d4ca;
+    margin: 0;
   }
 
   .acquisition-points div {
@@ -663,11 +683,25 @@ import Layout from '../layouts/Layout.astro';
     line-height: 1.5;
   }
 
-  .acquisition-copy .cta-note {
-    max-width: 490px;
-    margin: 14px 0 0;
-    font-size: 16px;
+  .acquisition-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 48px;
+    padding: 28px 32px;
+    background: #ebe5d7;
+  }
+
+  .acquisition-cta p {
+    max-width: 600px;
+    margin: 0;
+    font-size: 18px;
     line-height: 1.5;
+  }
+
+  .acquisition-cta .button {
+    flex-shrink: 0;
   }
 
   /* CONTACT */
@@ -879,14 +913,16 @@ import Layout from '../layouts/Layout.astro';
 
     .company-grid,
     .about-grid,
-    .acquisitions-grid,
+    .acquisitions-intro,
+    .acquisition-details,
     .contact-grid,
     .footer-main {
       grid-template-columns: 1fr;
     }
 
     .about-grid,
-    .acquisitions-grid,
+    .acquisitions-intro,
+    .acquisition-details,
     .contact-grid {
       gap: 20px;
     }
@@ -894,6 +930,19 @@ import Layout from '../layouts/Layout.astro';
     .about-copy,
     .acquisition-copy {
       padding-top: 0;
+    }
+
+    .acquisition-details {
+      margin-top: 36px;
+      gap: 32px;
+    }
+
+    .acquisition-cta {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      margin-top: 36px;
+      padding: 24px;
     }
 
     .contact-details {
