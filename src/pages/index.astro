@@ -30,9 +30,9 @@ import Layout from '../layouts/Layout.astro';
         </h1>
 
         <p class="intro">
-          Swiss SaaS Group acquires, operates and grows practical B2B
-          software companies with a focus on automation, productivity
-          and sustainable long-term value.
+          Swiss SaaS Group acquires, operates and grows established B2B SaaS
+          companies with a focus on automation, productivity and sustainable
+          long-term value.
         </p>
 
         <div class="actions">
@@ -90,6 +90,24 @@ import Layout from '../layouts/Layout.astro';
               Visit TimeSheet →
             </a>
           </article>
+
+          <article class="company-card">
+            <span>LEGAL TECHNOLOGY</span>
+
+            <h3>Justice Story</h3>
+
+            <p>
+              Mitigation reporting software for criminal defense attorneys.
+            </p>
+
+            <a
+              href="https://www.justicestory.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit Justice Story →
+            </a>
+          </article>
         </div>
       </div>
     </section>
@@ -114,9 +132,9 @@ import Layout from '../layouts/Layout.astro';
 
           <p>
             We combine decades of technology and business experience with a
-            long-term ownership approach. Our focus is on practical software
-            products with established customers, recurring revenue and clear
-            opportunities for sustainable growth.
+            hands-on, long-term ownership approach. Our focus is on practical
+            software products with established customers, recurring revenue and
+            clear opportunities for sustainable growth.
           </p>
 
           <div class="founder">
@@ -147,9 +165,9 @@ import Layout from '../layouts/Layout.astro';
           </p>
 
           <p>
-            We are particularly interested in bootstrapped software companies
-            with recurring revenue, loyal customers, a clear B2B use case and
-            a product that solves a real operational problem.
+            We are particularly interested in established, owner-led B2B SaaS
+            companies with recurring revenue, loyal customers, a clear use case
+            and a product that solves a real operational problem.
           </p>
 
           <p>
@@ -175,7 +193,7 @@ import Layout from '../layouts/Layout.astro';
             </div>
           </div>
 
-          <a class="button primary" href="mailto:info@swisssaasgroup.com">
+          <a class="button primary" href="#contact">
             Discuss an Acquisition
           </a>
         </div>
@@ -266,6 +284,14 @@ import Layout from '../layouts/Layout.astro';
           >
             TimeSheet
           </a>
+
+          <a
+            href="https://www.justicestory.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Justice Story
+          </a>
         </div>
 
         <div>
@@ -279,7 +305,7 @@ import Layout from '../layouts/Layout.astro';
         <div>
           <span>Legal</span>
 
-          <a href="#imprint">Imprint</a>
+          <a href="#">Imprint</a>
           <a href="#">Privacy</a>
         </div>
       </div>
@@ -287,43 +313,9 @@ import Layout from '../layouts/Layout.astro';
 
     <div class="container footer-bottom">
       <span>© {new Date().getFullYear()} Swiss SaaS Group</span>
-      <span>Stäfa · Zurich · Switzerland</span>
+      <span>Stäfa · Switzerland</span>
     </div>
   </footer>
-
-  <section class="imprint" id="imprint">
-    <div class="container imprint-inner">
-      <div class="imprint-block">
-        <h3>Swiss SaaS Group</h3>
-        <p>
-          operated by Hirzel SwissMedicare<br />
-          Tränkebachstrasse 20<br />
-          8712 Stäfa<br />
-          Switzerland
-        </p>
-
-        <p>UID: CHE-200.046.380</p>
-      </div>
-
-      <div class="imprint-block">
-        <h3>Contact</h3>
-        <p>
-          Email: <a href="mailto:info@swisssaasgroup.com">info@swisssaasgroup.com</a><br />
-          Phone: +41 79 420 51 92
-        </p>
-      </div>
-
-      <div class="imprint-block">
-        <h3>Responsible for content</h3>
-        <p>
-          Max Hirzel<br />
-          Tränkebachstrasse 20<br />
-          8712 Stäfa<br />
-          Switzerland
-        </p>
-      </div>
-    </div>
-  </section>
 </Layout>
 
 <style>
@@ -480,7 +472,7 @@ import Layout from '../layouts/Layout.astro';
 
   .company-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
   }
 
@@ -783,40 +775,6 @@ import Layout from '../layouts/Layout.astro';
     font-size: 12px;
   }
 
-  .imprint {
-    padding: 0 0 70px;
-    background: #090a0b;
-    border-top: 1px solid #202122;
-  }
-
-  .imprint-inner {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 32px;
-    padding-top: 26px;
-  }
-
-  .imprint-block h3 {
-    margin: 0 0 12px;
-    color: #d8bd78;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-  }
-
-  .imprint-block p {
-    margin: 0;
-    color: #aaa;
-    line-height: 1.7;
-    font-size: 14px;
-  }
-
-  .imprint-block a {
-    color: #f5f3ed;
-    text-decoration: none;
-  }
-
   /* MOBILE */
 
   @media (max-width: 700px) {
@@ -871,10 +829,6 @@ import Layout from '../layouts/Layout.astro';
 
     .footer-bottom {
       flex-direction: column;
-    }
-
-    .imprint-inner {
-      grid-template-columns: 1fr;
     }
   }
 </style>
